@@ -15,3 +15,42 @@
     C. student.greeting()
     D. student['Favorite Teacher'].name
     E. student.courseLoad[0]
+13. 
+    A. '32' 
+        Because '3' was a string and the operation was addition, the 2 was converted to a string as well and the operation was treated as a string concatenation.
+    B. 1
+        Since the operation was subtraction, instead of trying to subtract two strings, it converts the '3' into a number before doing a math operation with the 2.
+    C. 3
+        Since null maps to 0, this operation is treated as 3 + 0.
+    D. '3null'
+        Since '3' is a string and the operation is addition, null was turned into the string 'null' and a string concatenation occurs instead.
+    E. 4
+        Since true maps to 1, this operation is treated as 1 + 3
+    F. 0
+        Since false and null map to 0, this operation is treated as 0 + 0
+    G. '3undefined'
+        Since '3' is a string and the operation is addition, undefined was turned into the string 'undefined' and a string concatenation occurs instead.
+    H. NaN
+        Since the operation was subtraction, instead of trying to subtract two strings, it converts the '3' into a number before trying to do the math operation with undefined. Since undefined doesn't map to anything, the result is NaN.
+14. 
+    A. true
+        The string '2' becomes the number 2 in this comparison, and 2 > 1, so it returns true.
+    B. false
+        Since strings are compared letter by letter, and '2' > '1', this evaluates to false.
+    C. true
+        '2' becomes 2 for this comparison, and 2 == 2, so this returns true.
+    D. false
+        === checks the equality without type conversion. Since '2' and 2 are different types, it returns false.
+    E. false
+        True maps to 1 when converted to a number and 1 != 2, so this returns false.
+    F. true
+        The Boolean() function maps any nonzero number to true, and true === true, so this returns true.
+
+15. The == operator compares two values with type conversion, which may cause confusion due to Javascript. The === operator is more strict and compares two values without trying to convert their types.
+
+17. The array [2,4,6] is returned. First, modifyArray is called with the array [1,2,3] and the function doSomething as arguments. modifyArray creates a new array, then pushes the result of applying doSomething on each element of [1,2,3], before returning the new array. doSomething returns double the value of the number argument, so the resulting array is [2,4,6].
+
+19. 1
+    4
+    3
+    2

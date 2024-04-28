@@ -9,3 +9,9 @@
 9. ERROR! Similarly to question 5, because we defined i with "let", i's scope is only within the for loop and it is not visible at line 11.
 10. The console prints out '3'. The length variable is defined in the function's scope, which is the same scope as line 12. There is no error here because length is set to prices.length, which is 3, and the function does not try to change it.
 11. The function returns the array, [50, 100, 150]. The discounted array is a const, meaning it cannot be reassigned, but its elements can still be modified. So there isn't an error when discountedPrice is pushed into the array, and the function behaves as expected.
+12.
+    A. student.name
+    B. student['Grad Year']
+    C. student.greeting()
+    D. student['Favorite Teacher'].name
+    E. student.courseLoad[0]
